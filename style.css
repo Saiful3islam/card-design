@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.card{
+    margin: 250px auto;
+    height: 450px;
+    width: 300px;
+    border-left: 7px solid #079992;
+    padding-top: 50px;
+    padding: 0px 20px;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+.card::after{
+    content: "";
+    background-color: #079992;
+    height: 50%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: skew(50deg);
+   
+    transition: .5s;
+    z-index: -1;
+}
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+    transform: skew(0deg);
+    
+  
+   
+}
+.icon{
+    font-size: 50px;
+    color: black;
+    
+   
+}
+.btn{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 70px 70px 70px 70px;
+    color: rgb(0, 242, 255);
+}
+.btn:hover{
+    border: 2px solid black;
+    
+}
+.btn::after{
+    content: "\f061";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    
+    
+}
+h1{
+    font-size:40px;
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+p{
+    text-align: justify;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    
+}
+.send-card{
+    margin-top:10px;
+
+    
+    
+}
